@@ -1,0 +1,4 @@
+- name: Set DNS
+  ansible.windows.win_dns_client:
+    adapter_names: '*'
+    dns_servers: 1.1.1.1
