@@ -12,4 +12,3 @@
     - windows_universal_forwarder
     - windows_caldera_agent
     - sysmon
-    - atomic_red_team
