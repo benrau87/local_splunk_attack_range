@@ -19,7 +19,7 @@ config.vm.define "attack-range-kali_machine" do |config|
   end
 
   config.vm.provider "virtualbox" do |vb, override|
-    #vb.gui = true
+    vb.gui = false
     vb.name = "#{VM_NAME_KALI}"
     vb.customize ["modifyvm", :id, "--memory", {{ kali_machine_memory }}]
     vb.customize ["modifyvm", :id, "--cpus", {{ kali_machine_cpus }}]
