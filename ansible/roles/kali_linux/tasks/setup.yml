@@ -1,4 +1,7 @@
 ---
+- name: update kali
+  command: apt update && apt upgrade -y
+  become: yes
 
 - name: copy commands.rc to kali linux
   copy:

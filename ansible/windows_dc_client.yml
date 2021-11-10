@@ -5,7 +5,7 @@
     ansible_port: 5986
     ansible_winrm_server_cert_validation: ignore
     use_packer: "0"
-    hostname: win-host
+    hostname: win-server
   roles:
     - windows_common
     - windows_domain_client
