@@ -3,7 +3,7 @@ echo -e "What would you like to use as the global password?"
 read PASS
 sudo sed -i "s/replaceme/${PASS}/g" attack_range_local.conf
 sudo apt-get update 
-sudo apt-get install -y python3-dev python3-pip linux-headers-generic python-dev unzip python-pip virtualbox virtualbox-dkms python-virtualenv git ansible rpm
+sudo apt-get install -y python-pip python3-dev python3-pip linux-headers-generic python-dev unzip virtualbox virtualbox-dkms python-virtualenv git ansible rpm
 sudo gem install winrm-elevated
 sudo gem install winrm
 sudo ln -sfn /usr/bin/python3.6 /usr/bin/python
